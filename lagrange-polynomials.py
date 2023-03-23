@@ -1,21 +1,3 @@
-#################################################################
-## Functions to compute Lagrange polynomials
-#################################################################
-
-#################################################################
-## Imports
-## - No further imports should be necessary
-## - If you wish to import a non-standard modules, ask Ed if that 
-## - is acceptable
-#################################################################
-import numpy as np
-#################################################################
-
-#################################################################
-## Functions to be completed by student
-#################################################################
-
-#%% Q1 code
 def lagrange_poly(p,xhat,n,x,tol):
 
     """
@@ -70,7 +52,7 @@ def lagrange_poly(p,xhat,n,x,tol):
 
     return lagrange_matrix, error_flag
 
-#%% Q5 Code
+
 
 def deriv_lagrange_poly(p,xhat,n,x,tol):
 
@@ -98,13 +80,9 @@ def deriv_lagrange_poly(p,xhat,n,x,tol):
 
 #################################################################
 ## Test Code ##
-## You are highly encouraged to write your own tests as well,
-## but these should be written in a separate file
 #################################################################
 
 
-################
-#%% Q1 Test
 ################
 
 # Initialise
@@ -123,8 +101,6 @@ print(lagrange_matrix)
 print("")
 print("error_flag = " + str(error_flag))
 
-################
-#%% Q5 Test
 ################
 
 # Initialise
