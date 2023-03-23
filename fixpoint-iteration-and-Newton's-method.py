@@ -1,10 +1,3 @@
-"""
-MATH2019 CW1 rootfinders module
-
-@author: Muyuan YAO 20320351
-"""
-
-
 from array import array
 import numpy as np
 import matplotlib.pyplot as plt
