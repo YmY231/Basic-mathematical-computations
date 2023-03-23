@@ -1,23 +1,6 @@
-#################################################################
-## Functions to find a range of approximations using polynomials
-#################################################################
-
-#################################################################
-## Imports
-## - No further imports should be necessary
-## - If you wish to import a non-standard modules, ask Ed if that 
-## - is acceptable
-#################################################################
 import numpy as np
 import matplotlib.pyplot as plt
 import lagrange_polynomials as lp #previously written functions
-#################################################################
-
-#################################################################
-## Functions to be completed by student
-#################################################################
-
-#%% Q2 code
 
 def poly_interpolation(a,b,p,n,x,f,produce_fig):
     
@@ -38,8 +21,6 @@ def poly_interpolation(a,b,p,n,x,f,produce_fig):
     return interpolant, fig
 
 
-#%% Q4 code
-
 def poly_interpolation_2d(p,a,b,c,d,X,Y,n,m,f,produce_fig):
 
     tol  = 1.0e-10   
@@ -58,8 +39,6 @@ def poly_interpolation_2d(p,a,b,c,d,X,Y,n,m,f,produce_fig):
     return interpolant,fig  
 
 
-#%% Q6 code
-
 def approximate_derivative(x,p,h,k,f):
 
     tol = 1.0e-10
@@ -73,14 +52,8 @@ def approximate_derivative(x,p,h,k,f):
 
 #################################################################
 ## Test Code ##
-## You are highly encouraged to write your own tests as well,
-## but these should be written in a separate file
 #################################################################
 print("\nAny outputs above this line are due to importing lagrange_polynomials.py.\n")
-
-################
-#%% Q2 Test
-################
 
 # Initialise
 a = 0.5
@@ -98,8 +71,6 @@ print("interpolant = \n")
 print(interpolant)
 
 ################
-#%% Q4 Test
-################
 
 f = lambda x,y : np.exp(x**2+y**2)
 n = 4; m = 3
@@ -115,8 +86,6 @@ print('Q4 TEST OUTPUT:\n')
 print("interpolant = \n")
 print(interpolant)
 
-################
-#%% Q6 Test
 ################
 
 print("\n################################")
