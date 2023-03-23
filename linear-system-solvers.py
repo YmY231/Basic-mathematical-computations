@@ -1,9 +1,3 @@
-"""
-MATH2019 CW2 systemsolvers module
-
-@author: Muyuan YAO
-"""
-
 import numpy as np
 import matplotlib.pyplot as plt
 import warmup_solution as ws
